@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        body h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .row {
+            width: 100%;
+            height: 250px;
+            margin: 100px auto;
+            background: #EFDC81;
+            padding: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            /* align-items: baseline; */
+
+            /* align-items: flex-end; */
+            /* align-content: flex-end; */
+            /* justify-content: flex-end; */
+
+        }
+
+        .col {
+            background: #f44336;
+            margin: 20px;
+            padding: 10px;
+
+        }
+
+        .col_1 {
+            background: #E0EEF9;
+            order: 11;
+        }
+
+        .col_2 {
+            background: #E0EEF9;
+            order: 2;
+        }
+
+        .col_3 {
+            background: #E0EEF9;
+            order: 6;
+        }
+
+        .col_4 {
+            background: #E0EEF9;
+            order: 4;
+        }
+
+        .col_5 {
+            background: #E0EEF9;
+            order: 10;
+        }
+
+        .col_6 {
+            background: #E0EEF9;
+            order: 9;
+        }
+
+        .col_7 {
+            background: #E0EEF9;
+            order: 7;
+        }
+
+        .col_8 {
+            background: #E0EEF9;
+            order: 5;
+        }
+
+        .col_9 {
+            background: #E0EEF9;
+            order: 1;
+        }
+
+        .col_10 {
+            background: #E0EEF9;
+            order: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Order</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col col_1">One</div>
+            <div class="col col_2">Two</div>
+            <div class="col col_3">Three</div>
+            <div class="col col_4">Four</div>
+            <div class="col col_5">Five</div>
+            <div class="col col_6">Six</div>
+            <div class="col col_7">Seven</div>
+            <div class="col col_8">Eight</div>
+            <div class="col col_9">Nine</div>
+            <div class="col col_10">Ten</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
