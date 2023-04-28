@@ -1,0 +1,59 @@
+
+body{
+    background-color: rgb(30, 208, 208,0.5);   
+}
+
+
+
+/* first-letter pseudo element styleing first alphbet in the first line*/
+
+p::first-letter {
+    color: blue;
+    font-size: 20px;
+}
+
+/* first-line pseudo element styleing   first line*/
+p:hover::first-line {
+    color: gray;
+    font-size: 25px;
+}
+
+/* selection pseudo element styleing when selection*/
+h1::selection {
+    background-color: aqua;
+    color: white;
+}
+
+p::selection {
+    background-color: blue;
+    color: whitesmoke;
+}
+
+li::selection {
+    background-color: cadetblue;
+    color: white;
+}
+
+/* marker pseudo element styleing list style */
+
+::marker {
+    color: red;
+    font-size: 15px;
+
+}
+
+/* before pseudo element add content and styleing before element*/
+h3:first-child:hover::before {
+    background-color: aqua;
+    text-decoration: none;
+    display: inline-block;
+    content: 'Hello';
+}
+
+/* after pseudo element add content and styleing after element*/
+h3:first-child:hover::after {
+    background-color: aqua;
+    text-decoration: none;
+    display: inline-block;
+    content: 'World';
+}

@@ -1,0 +1,45 @@
+.con-1 img {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    position: relative;
+    border: 1px solid red;
+    margin-top: 200px;
+
+}
+
+.black {
+    width: 33%;
+    position: relative;
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 100px;
+}
+
+.green {
+    width: 33%;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 220px;
+    background-color: grey;
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.blue {
+    width: 80%;
+    position: absolute;
+    z-index: 10;
+    top: 80px;
+    left: 0px;
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+}

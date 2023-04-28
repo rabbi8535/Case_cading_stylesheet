@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class (common)</title>
+    <style>
+        /* Select first child in the div*/
+        .first p:first-child{
+            color: red;
+
+        }
+        /* Select last child in the div*/
+        .first p:last-child{
+            color: rgb(0, 30, 255);
+
+        }
+
+       
+        /* Select custom child in the div*/
+        .first p:nth-child(2){
+            color: aqua;
+
+        }
+        /* use custom formula like odd/2n-1, even/2n and moreone in the div  and also uses nth-last-child formula like last-child*/
+        .second p:nth-child(odd){
+            color: aqua;
+
+        }
+
+        /* select all div without selected div */
+        div:not(.first,.second,.ch){
+            background-color: aqua;
+
+        }
+
+        /*  */
+        p:empty{
+            background-color: rgb(255, 0, 85);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="first">
+        <h1>First</h1>
+        <p>Lorem ipsum dolor sit amet.1</p>
+        <p>Lorem ipsum dolor sit amet.2</p>
+
+        <div class="ch">
+            <p>Lorem ipsum dolor sit amet.3</p>
+            <h2>heading 2</h2>
+            <p>Lorem ipsum dolor sit amet.4</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet.5</p>
+
+    </div><br><br>
+
+
+    <div class="second">
+        <p>Lorem ipsum dolor sit amet.1</p>
+        <p>Lorem ipsum dolor sit amet.2</p>
+        <p>Lorem ipsum dolor sit amet.3</p>
+        <p>Lorem ipsum dolor sit amet.4</p>
+        <p>Lorem ipsum dolor sit amet.5</p>
+        <p>Lorem ipsum dolor sit amet.6</p>
+        <p>Lorem ipsum dolor sit amet.7</p>
+        <p>Lorem ipsum dolor sit amet.8</p>
+        <p></p>
+    </div><br><br>
+
+    <div class="third">
+        <p>Lorem ipsum dolor sit amet.1</p>
+        <p>Lorem ipsum dolor sit amet.2</p>
+        <p>Lorem ipsum dolor sit amet.3</p>
+        <p>Lorem ipsum dolor sit amet.4</p>
+        <p>Lorem ipsum dolor sit amet.5</p>
+        <p>Lorem ipsum dolor sit amet.6</p>
+        <p>Lorem ipsum dolor sit amet.7</p>
+        <p>Lorem ipsum dolor sit amet.8</p>
+        <div> </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    counter-reset: section;
+}
+.container{
+    width: 80%;
+    margin: 50px auto
+}
+.sec{
+    width: 100%;
+    margin: 50px auto;
+
+}
+h2::before{
+    counter-increment: section 1;
+    content: 'Chapter ' counter(section) " : ";
+    color: red;
+    
+}
+h2{
+    counter-reset: subsection;
+}
+
+h3::before{
+    counter-increment: subsection 1;
+    content: counter(section) " . " counter(subsection) " - ";
+}

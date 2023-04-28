@@ -1,0 +1,35 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* whole gallary take middle*/
+.container{
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.container img{
+    width: 100%;
+   
+}
+
+/* designing the image gallary*/
+.gallary{
+    width: 23%;
+    float: left;
+    margin: 5px;
+    border:1px solid #ccc ;
+    box-shadow: 0px,16px,8px,0px rgba(0, 0, 0, 0.2);
+ 
+}
+
+
+/* designing the image description*/
+.description{
+    padding: 10px;
+    text-align: center;
+}

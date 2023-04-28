@@ -1,0 +1,30 @@
+/* we can't set width and height in inline property */
+.inline .a{
+    display: inline;
+    background-color: yellow;
+    width: 90px;
+    height: 40px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+/* we can set width and height in block property but also take line break*/
+.block .b{
+    display: block;
+    background-color: yellow;
+    width: 90px;
+    height: 40px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 3px;
+}
+/* we can set width and height in block property  not take line break*/
+.inline-block .c{
+    display: inline-block;
+    background-color: yellow;
+    width: 90px;
+    height: 40px;
+    border: 3px solid black;
+    padding: 5px;
+    margin: 3px;
+}

@@ -1,0 +1,115 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* for Styleing container-1*/
+.container-1{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.form{
+    width: 40%;
+    margin: 100px auto;
+    }
+
+
+/* A[attr] to select  only attribue  */ 
+input[type]{
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+  /* A[attr=value] to select   attribue with value */  
+
+  input[type = submit]{
+    background-color: green;
+    padding: 10px 20px;
+    border: none;
+    outline: 2px solid yellowgreen;
+    font-size: 16px;
+    color: white;
+
+  }
+
+
+
+
+
+
+
+  /* for Styleing container-2*/
+
+.container-2{
+    width: 80%;
+    
+    
+    
+}
+
+.container-2 ul{
+    width: 100%;
+    margin:  auto;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+    overflow: hidden;
+    
+}
+.container-2 ul li{
+    display: inline-block;
+}
+
+.container-2 ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right{
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+
+/* for styling container-3*/
+
+.container-3{
+    width: 90%;
+    margin: auto;
+}
+/* A[attr^=value] to select  all attribue with start value */  
+img[alt^=Men]{
+    border: 1px solid red;
+}
+/* A[attr|=value] to select  all attribue with - value */  
+img[alt|=Men]{
+    border: 1px solid rgb(0, 211, 46);
+}
+
+/* A[attr*=value] to select  all attribue with  value anywhere */  
+img[alt*=ohm]{
+    border: 1px solid rgb(0, 112, 211);
+}
+
+/* A[attr$=value] to select  all attribue with  value in the last */  
+img[alt$=ohn]{
+    border: 1px solid rgb(211, 0, 197);
+}
+
+/* A[attr*=value] to select  all attribue with space beetween value  */  
+img[alt~=oh]{
+    border: 1px solid rgb(211, 197, 0);
+}

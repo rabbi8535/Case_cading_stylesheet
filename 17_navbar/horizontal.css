@@ -1,0 +1,42 @@
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #0b0b0b;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+
+
+}
+
+.navbar li {
+    float: left;
+
+}
+
+.navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 18px;
+    text-align: justify;
+    color: white;
+
+}
+
+.navbar li a.active {
+    background-color: #04AA6D;
+}
+
+.navbar li a:not(.active):hover {
+    background-color: #565050;
+}
+
+
+
+.articale {
+    margin-top: 5%;
+    text-align: justify;
+
+}

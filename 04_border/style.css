@@ -1,0 +1,31 @@
+
+.one{
+    border: 1px solid red;
+    margin: 20px 10px 30px 15px;
+}
+.two{
+    border: 2px dashed pink;
+}
+.three{
+    border: 3px dotted green;
+}
+.four{
+    border: 4px groove ;
+    border-radius: 30px;
+}
+
+.five{
+    border: 5px ridge blue;
+}
+
+.six{
+    border: 2px inset aqua;
+}
+.seven{
+    border: 3px outset lightgreen;
+}
+
+div{
+    width: 500px;
+    margin: auto;
+}

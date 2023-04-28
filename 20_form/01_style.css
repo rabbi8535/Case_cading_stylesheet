@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* first of take middle poin*/
+.form{
+    width: 80%;
+    margin: 90px auto;
+    padding: 30px;
+    background-color:#f2f2f2 ;
+    border-radius: 5px;
+}
+
+
+
+/* design input without button*/
+input[type]:not(:last-child),select{
+   width: 100%;
+   box-sizing: border-box;
+   margin: 8px 0px;
+   padding: 8px 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+input[type]:focus{
+    background-color: aquamarine;
+    outline: none;
+  
+}
+
+select{
+    cursor: pointer;
+}
+
+label::selection{
+    background: aqua;
+    color: rgb(29, 116, 87);
+}
+
+select::selection{
+    background: aqua;
+    color: rgb(29, 116, 87);
+}
+
+
+
+/* design submit button*/
+input[type=submit] {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(66, 173, 66);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+
+
+
+input[type=submit]:hover{
+    background-color:rgb(12, 117, 12);
+}

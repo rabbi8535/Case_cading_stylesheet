@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        body h1{
+            text-align: center;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+        .row{
+            background: #f0f0f0;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 70%;
+            margin: 100px auto;
+            color: #fff;
+            display: flex;
+            flex-flow: column wrap;
+            
+            /* align-content: flex-start; */
+            /* align-items: flex-start; */
+
+            /* align-content: flex-end; */
+            /* align-items: flex-end; */
+
+            /* align-content: center; */
+            /* align-items: center; */
+
+            /* align-content: baseline; */
+            /* align-items: baseline; */
+
+            /* align-content: space-around; */
+            /* justify-content: space-around; */
+
+            /* align-content: space-between; */
+            /* justify-content: space-between; */
+            
+
+            /* align-content: space-evenly; */
+            /* justify-content: space-evenly; */
+                        
+        }
+        .col{
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+           
+            }
+
+    .col-1 {
+        background: red;
+       
+       
+        
+    }
+    .col-2 {
+        background: rgb(255, 225, 0);
+       
+    }
+    .col-3 {
+        background: rgb(30, 255, 0);
+        
+    }
+    .col-4 {
+        background: rgb(0, 187, 255);
+       
+        
+    }
+    .col-5 {
+        background: rgb(153, 0, 255);
+        
+    }
+    .col-6 {
+        background: rgb(255, 0, 174);
+        
+    }
+    .col-7 {
+        background: rgb(0, 255, 140);
+    }
+    .col-8 {
+        background: rgb(55, 0, 255);
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Align-self</h1>
+   <div class="container">
+    <div class="row">
+        <div class="col col-1">One</div>
+        <div class="col col-2">Two</div>
+        <div class="col col-3">Three</div>
+        <div class="col col-4">Four</div>
+        <div class="col col-5">Five</div>
+        <div class="col col-6">Six</div>
+        <div class="col col-7">Seven</div>
+        <div class="col col-8">Eight</div>
+    </div>
+   </div>
+</body>
+</html>

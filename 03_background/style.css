@@ -1,0 +1,11 @@
+body {
+    /* background-color: aquamarine;
+    background-image: url("Images/doremon.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed; */
+
+    background: aquamarine url("images/doremon.png") no-repeat 
+     right top fixed;
+    margin-right: 290px;
+}

@@ -1,0 +1,55 @@
+/* whole container are middle */
+.container {
+    width: 350px;
+    margin: 100px auto;
+
+}
+
+/* dorpdown class need to position*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+/* designing button*/
+.btn {
+    background-color: rgb(30, 125, 54);
+    color: rgb(245, 245, 245);
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.dropdown .btn:hover {
+    background-color: rgb(29, 94, 45);
+}
+
+
+
+/* designing content*/
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.content a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+.content a:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseuso class(Linkig)</title>
+
+    <style>
+        ul a:link{
+            color: rgb(123, 21, 21);
+            text-decoration: none;
+        }
+        
+
+        li a:hover{
+            background-color: yellow;
+            border: 1px solid red;
+            padding: 2px;
+            outline: 1px solid green;
+            font-size: 20px;
+            border-radius: 5px;
+            color: black;
+        }
+        li a:active{
+            color: aqua;
+            font-style: bold;
+        }
+        
+        li a:visited{
+           
+            font-style: bold;
+            text-decoration: underline;
+        }
+        p:target{
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#web">What is the webdevolopment</a></li>
+        <li><a href="#html">What is the html</a></li>
+        <li><a href="#css">What is the css</a></li>
+        <li><a href="#js">What is the js</a></li>
+        
+    </ul>
+
+    <div class="about">
+        <p id="web">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quas placeat ad qui adipisci architecto delectus alias neque maxime nam, eos, dignissimos libero laudantium unde eveniet quis? Nam, eveniet cum?</p>
+        <p id="html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, incidunt! Veritatis odit atque enim veniam ipsam asperiores similique, sapiente, minima in fugiat inventore eius blanditiis doloremque provident quidem eum labore?</p>
+        <p id="css">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, incidunt! Veritatis odit atque enim veniam ipsam asperiores similique, sapiente, minima in fugiat inventore eius blanditiis doloremque provident quidem eum labore?</p>
+        <p id="js">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, incidunt! Veritatis odit atque enim veniam ipsam asperiores similique, sapiente, minima in fugiat inventore eius blanditiis doloremque provident quidem eum labore?</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .row {
+            width: 100%;
+            height: 250px;
+            margin: 100px auto;
+            background: #2E134B;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            align-items: center;
+            /* align-items: stretch; */
+            /* align-items: baseline; */
+
+        }
+
+        .col {
+            background: #7E1309;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Align-item</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col col_1">One</div>
+            <div class="col col_2">Two</div>
+            <div class="col col_3">Three</div>
+            <div class="col col_4">Four</div>
+            <div class="col clo_5">Five</div>
+            <div class="col clo_6">Six</div>
+            <div class="col clo_7">Seven</div>
+            <div class="col clo_8">Eight</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

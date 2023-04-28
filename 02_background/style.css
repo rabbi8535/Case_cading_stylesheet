@@ -1,0 +1,12 @@
+.first{
+    background-color: aqua;
+    opacity: 0.9;
+}
+.second{
+    background-color: rgba(195, 0, 255,0.5);
+}
+    
+.third{
+    background-color: rgb(68, 255, 0);
+    opacity: 0.4;
+}

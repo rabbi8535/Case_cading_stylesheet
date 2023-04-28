@@ -1,0 +1,28 @@
+body{
+       font-family: Arial, Helvetica, sans-serif;
+}
+.worker{
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+.worker th,td{
+    border: 1px solid #ddd;
+    padding: 20px;
+
+}
+.worker th{
+    background-color: #04AA6D;
+    color: white;
+
+}
+.worker tr:hover{
+    background-color:#4c577865 ;
+    color: white;
+}
+.worker tr:nth-child(even){
+    background-color: lightgray;
+
+}

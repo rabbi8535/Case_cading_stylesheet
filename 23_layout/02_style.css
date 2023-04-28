@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-sizing: border-box;
+ 
+}
+
+/* Design header section*/
+.header{
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0);
+    padding: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header p::selection{
+    background-color: yellow;
+    color: rgb(226, 19, 19);
+    position: static;
+   
+}
+.header h1::selection{
+    background-color: yellow;
+    color: rgb(226, 19, 19);
+   
+}
+
+/* Designing navbar section*/
+
+.navbar{
+    width: 100%;
+    background-color:#392626dd ;
+    position: sticky;
+    top: 0px;
+}
+
+.navbar a{
+    display:block;
+    float:left;
+    padding: 14px 16px;
+   text-decoration: none;
+   color: white;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(64, 110, 95);
+    color: black;
+}
+
+.navbar .right{
+    float: right;
+   
+    
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* Designing row section*/
+
+.row{
+    text-align: center;
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+
+.left_col{
+    width: 75%;
+    float: left;
+}
+
+.right_col{
+    width: 25%;
+    float: right;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    }
+
+  .fake_image{
+    width: 100%;
+    background-color: #aaa;
+    padding: 20px;
+   
+  }  
+
+  .card{
+    background-color:white ;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+
+  /* Designing Footer*/
+  .footer{
+    width: 100%;
+    background-color: gray;
+    padding: 30px;
+    text-align: center;
+  }
+
+  /* for responsive*/
+
+  @media screen and (max-width: 800px){
+
+    .left_col,.right_col{
+        width: 100%;
+        
+    }
+    
+  }
+
+  @media  screen and (max-width:550px){
+        .navbar a{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .navbar{
+            position: static;
+            top: 0px;
+        }
+  }

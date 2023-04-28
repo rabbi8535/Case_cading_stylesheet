@@ -1,0 +1,36 @@
+/* display none property vanish other element*/
+.none{
+    background-color: aqua;
+    display: none;
+}
+
+/* display inline property convert block to inline*/
+.inline{
+    background-color: green;
+    display: inline;
+}
+
+/* display block property convert inline to block*/
+.block .span{
+    background-color: aquamarine;
+    display: block;
+}
+
+/* display inline-block property convert inline-block*/
+.inline-block{
+    background-color: cadetblue;
+    display: inline-block;
+  
+}
+
+/* display inherit property adovte parent property nature*/
+.inherit .inhe{
+    background-color: burlywood;
+    display: inherit;
+}
+/* display initial property adopte original property nature*/
+.initial  {
+    background-color: rgb(14, 234, 14);
+    /* display:initial; */
+
+}
