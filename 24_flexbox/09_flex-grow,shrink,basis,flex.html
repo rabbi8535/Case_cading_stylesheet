@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        /* for all section */
+        body h1 {
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .row {
+            width: 100%;
+            margin: 50px auto;
+            display: flex;
+        }
+
+        
+        /* completed*/
+
+
+
+        /* Flex-grow section*/
+
+        .row-1{
+            background: purple;
+                       flex-grow: 1;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+
+        }
+
+        .row-1 .col {
+            width: 20px;
+            background: palegoldenrod;
+            margin: 20px ;
+            padding: 20px;
+                        
+        }
+
+        .row-1 .col-1{
+            flex-grow: 3;
+            
+        }
+        .row-1 .col-2{
+            flex-grow:2 ;
+        }
+        /* Completed Flex-grow section*/
+
+        /* Flex-shrink section */
+        .row-2{
+            background: aqua;
+            flex-flow:row wrap;
+        }
+
+        .row-2 .col{
+            background: #f44336;
+            padding: 20px;
+            margin: 20px;
+            width: 60px;
+            
+        }
+
+        .row-2 .col-2{
+            flex-shrink: 0;
+        }
+       /* Completed Flex-shrink section */
+
+        /* Flex-basis section*/
+        .row-3{
+            background: #f44336;
+            color: white;
+            flex-flow: row wrap;
+        }
+
+        .row-3 .col{
+            background: seagreen;
+            padding:5px;
+            margin: 5px;
+            flex-basis: 95px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- flex-grow section-->
+    <h1>Flex-grow</h1>
+    <div class="container">
+        <div class="row-1 row">
+            <div class="col col-1">One</div>
+            <div class="col col-2">Two</div>
+            <div class="col col-3">Three</div>
+            <div class="col col-4">Four</div>
+            <div class="col col-5">Five</div>
+        </div>
+    </div><br>
+    <!-- end flex-grow section -->
+
+    <!-- flex-shrink section -->
+       <h1>Flex-shrink</h1>
+    <div class="container">
+        <div class="row-2 row">
+            <div class="col col-1">One</div>
+            <div class="col col-2">Two</div>
+            <div class="col col-3">Three</div>
+            <div class="col col-4">Four</div>
+            <div class="col col-5">Five</div>
+        </div>
+    </div>
+    <!-- end flex-shrink section -->
+
+    <!-- flex-basis section -->
+    <h1>Flex-shrink</h1>
+    <div class="container">
+        <div class="row-3 row">
+            <div class="col col-1">One</div>
+            <div class="col col-2">Two</div>
+            <div class="col col-3">Three</div>
+            <div class="col col-4">Four</div>
+            <div class="col col-5">Five</div>
+        </div>
+    </div>
+    <!-- end flex-basis section -->
+
+
+</body>
+
+</html>
