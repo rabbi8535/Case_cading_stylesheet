@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-2d</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .hero{
+            width: 100vh;
+          
+        }
+
+
+        .container-1,.container-2 {
+            width: 250px;
+            height: 200px;
+            background: #ff000f;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            margin: 0 -125px;
+            z-index: 2;
+            
+        }
+        
+
+        .container-2 {
+            position: absolute;
+            margin-top: 20px;
+            background-color: #7eff22;
+            z-index: 3;
+            transform-origin: top right;
+            transform: skew(21deg,10deg);
+        }
+        .container-3{
+            width: 250px;
+            height: 200px;
+            margin: 0 -125px;
+            background: #ccf;
+            text-align: center;
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            transform: skewX(40deg);
+        }
+       
+        .container-4{
+            width: 250px;
+            margin: 0 -125px;
+            background: #ccf;
+            text-align: center;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: skewy(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>skew</h1>
+    <div class="container-1">
+        <h3>Normal div</h3>
+    </div>
+    <div class=" container-2">
+        <h3>skew(x,y)</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Similique necessitatibus optio voluptas
+            commodi quasi id facere pariatur explicabo est,
+            dolores nostrum rerum repellendus aliquam facilis,
+            ipsam eligendi, in deserunt consectetur.</p>
+    </div>
+
+    <div class=" container-3">
+        <h3>skewx()</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod? Sed id suscipit aliquam inventore veniam iste ullam officiis consequuntur numquam blanditiis accusantium, ipsa, culpa eius expedita, perferendis illum quis!</p>
+    </div>
+    <div class=" container-4">
+        <h3>skewy()</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, quod? Sed id suscipit aliquam inventore veniam iste ullam officiis consequuntur numquam blanditiis accusantium, ipsa, culpa eius expedita, perferendis illum quis!</p>
+    </div>
+
+    </div>
+</body>
+
+</html>
