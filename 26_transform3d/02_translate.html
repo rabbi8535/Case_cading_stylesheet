@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform-3d</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            background: #ccc;
+            position: absolute;
+            left: 50%;
+            margin: 60px -150px;
+            text-align: center;
+        }
+
+        /* container-1*/
+        .container-1 div {
+            width: 100%;
+            height: 100%;
+            background: #16ccae;
+            transform: perspective(800px) 
+             translate3d(-2px, 19px, -152px);
+        }
+
+        /* end container-1*/
+
+
+        /* container-2*/
+        .container-2 div {
+            width: 100%;
+            height: 100%;
+            background: yellow;
+            transform: perspective(800px) 
+             translateX(60px);
+        }
+
+        .container-2 {
+            top: 40%;
+
+        }
+
+        /* end container-2*/
+
+
+
+        /* container-3*/
+        .container-3 div {
+            width: 100%;
+            height: 100%;
+            background: #00ff11;
+            transform: perspective(800px) translateY(40px) 
+             translateZ(-58px);
+        }
+
+        .container-3 {
+            top: 75%;
+        }
+
+        /* end container-3*/
+
+
+
+
+        /* container-4 */
+        .container-4 div {
+            width: 100%;
+            height: 100%;
+            background: rgb(255, 0, 0);
+            transform: perspective(800px) 
+             translatey(60px);
+        }
+
+        .container-4 {
+            top: 115%;
+
+        }
+
+        /*end container-4 */
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Translate</h1>
+    <div class="main">
+        <div class="container container-1">
+            <div>
+                <h3>translate3d()</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
+            </div>
+        </div>
+
+
+        <div class="container container-2">
+            <div>
+                <h3>translateX()</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Tempore, odio.</p>
+            </div>
+        </div>
+        <div class="container container-3">
+            <div>
+                <h3>translateZ()</h3>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="container container-4">
+            <div>
+                <h3>translateY()</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>
