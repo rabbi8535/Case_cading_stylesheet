@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+    body h1{
+        text-align: center;
+    }
+    .container-1{
+        width: 300px;
+        height: 250px;
+        background: #f4436f;
+        text-align: center;
+        transform: translate(220px,100px) ;
+    }
+
+    .container-2{
+        width: 300px;
+        height: 250px;
+        background: #f2143f;
+        text-align: center;
+        transform: translateX(220px) translatey(81px);
+        
+    }
+    </style>
+</head>
+<body>
+    <h1>Translate</h1>
+    <div class="container-1">
+        <h2>translate(x,y)</h2>
+        <p>The flowing example moves the div 220px to the right and 100px 
+         down from the curent position </p>
+    </div>
+    <div class="container-2">
+        <h2>translateX(),translateY()</h2>
+        <p>The flowing example moves div 250px to the right and 200px   
+             down from the current position sepretly</p>
+    </div>
+</body>
+</html>
