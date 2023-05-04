@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .div {
+        /* display: inline-block; */
+        width: 150px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+
+        /* margin-right: 20px; */
+        /* margin-bottom: 20px; */
+        margin-left: 20px;
+
+        /* animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: none;
+        transition: all 2s; */
+        animation-fill-mode: both;
+        animation-play-state: paused;
+        animation: example 5s ease-in-out 1s 2 reverse;
+
+    }
+
+    @keyframes example {
+        0% {
+            background: red;
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            background: rgb(115, 255, 0);
+            left: 150px;
+            top: 0px;
+        }
+
+        50% {
+            background: rgb(0, 106, 255);
+            top: 150px;
+            left: 150px;
+        }
+
+        75% {
+            background: rgb(255, 0, 200);
+            top: 150px;
+            left: 0px;
+        }
+
+        100% {
+            background: rgb(244, 202, 14);
+            top: 0px;
+            left: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="div">Test Purpose</div>
+</body>
+
+</html>
