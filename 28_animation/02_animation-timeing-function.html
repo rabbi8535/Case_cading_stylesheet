@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation timeing function</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+            position: relative;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            background: green;
+            animation: eexam 3s linear 2s infinite alternate;
+
+        }
+
+        @keyframes eexam {
+            0% {
+                top: 0;
+                left: 0px;
+            }
+
+            100% {
+                top: 0;
+                left: 500px;
+            }
+        }
+
+         .div1{
+            
+            position: relative;
+            background: green;
+            
+             
+        }
+         *.div2{
+            
+            position: relative;
+            background: rgb(0, 128, 126);
+            animation: eexam 3s ease 2s infinite 
+             alternate;
+             
+        }
+        .div3{
+            
+            position: relative;
+            background: rgb(72, 73, 171);
+            animation: eexam 3s ease-in 2s infinite 
+             alternate;
+             
+        }
+        .div4{
+            
+            position: relative;
+            background: rgb(128, 0, 105);
+            animation: eexam 3s ease-out 2s infinite 
+             alternate;
+             
+        }
+        .div5{
+            
+            position: relative;
+            background: rgb(172, 6, 227);
+            animation: eexam 3s ease-in-out 2s infinite 
+             alternate;
+             
+        }
+        .div6{
+            
+            position: relative;
+            background: rgb(111, 128, 0);
+            animation: eexam 3s cubic-bezier(0.1, 
+             0.4, 0.6,0.8, 1) 1s infinite alternate;
+             
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="div1">linear</div>
+        <div class="div2">ease</div>
+        <div class="div3">ease-in</div>
+        <div class="div4">ease-out</div>
+        <div class="div5">ease-in-out</div>
+        <div class="div6">cubic bezier</div>
+       
+    </section>
+
+</body>
+
+</html>

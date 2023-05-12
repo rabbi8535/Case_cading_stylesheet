@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipath</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .circle1 {
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background:green;
+            position: absolute;
+            clip-path: circle(10% at 50% 50%);
+            z-index: 3;
+        }
+        .circle2 {
+            width: 50%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background:rgb(128, 0, 0);
+            position: absolute;
+            clip-path: circle(20%  at 24% 50%);
+            z-index: 2;
+        }
+        .circle3 {
+            width: 50%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background:rgb(128, 0, 81);
+            position: absolute;
+            clip-path: circle(20% at 77% 50%);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+
+
+</body>
+
+</html>
