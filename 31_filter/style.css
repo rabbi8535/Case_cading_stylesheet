@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.container img{
+    width: 100%;
+    margin: 30px;
+}
+.container div{
+    flex-basis: 20%;
+}
+
+.div-1 img{
+    /* default value is 100% */
+    filter: brightness(20%);
+}
+
+.div-2 img{
+    /* default value is 100% */
+    filter: contrast(170%);
+}
+
+.div-3 img{
+    /* default value is 100% */
+    filter: saturate(180%);
+}
+
+.div-4 img{
+    /* default value is 0% 0-100% */
+    filter: grayscale(100%);
+}
+
+.div-5 img{
+    /* default value is 0%  0-100% */
+    filter: invert(100%);
+}
+
+.div-6 img{
+    /* default value is 100%  0-100% */
+    filter: opacity(50%);
+}
+.div-7 img{
+    /* default value is 0%  0-100% */
+    filter: sepia(100%);
+}
+
+.div-8 img{
+    /* default value is 0px */
+    filter: blur(2px);
+}
+
+.div-9 img{
+    /* like shadow box */
+    filter: drop-shadow(2px 4px 5px  green);
+}
+.div-10 img{
+    /* changing color  using deg */
+    filter: hue-rotate(30deg)
+}
+
+.div-11 img{
+    /* */
+    filter: initial;
+}
