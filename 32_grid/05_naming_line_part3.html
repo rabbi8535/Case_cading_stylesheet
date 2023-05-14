@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Naming Lines</title>
+    <style>
+        .container {
+            width: 720px;
+            position: relative;
+            left: 50%;
+            margin-left: -360px;
+            background: #ccc;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 100px 80px    
+                                400px 180px;
+            grid-template-areas:
+                " header header header "
+                " menu menu menu "
+                " box-1 box-2 sidebar "
+                " content content sidebar "
+                " footer footer footer "
+            ;
+            grid-gap: 15px;
+
+        }
+
+        .header {
+            background: goldenrod;
+            grid-area: header;
+
+
+
+        }
+
+        .menu {
+            background: red;
+            grid-area: menu;
+
+
+        }
+
+        .box-1 {
+            background: aqua;
+            grid-area: box-1;
+
+        }
+
+        .box-2 {
+            background: rgb(181, 184, 8);
+            grid-area: box-2;
+
+        }
+
+        .sidebar {
+            background: teal;
+            grid-area: sidebar;
+
+
+        }
+
+        .content {
+            background: brown;
+            grid-area: content;
+
+
+        }
+
+        .footer {
+            background: rgb(70, 70, 103);
+            grid-area: footer;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
