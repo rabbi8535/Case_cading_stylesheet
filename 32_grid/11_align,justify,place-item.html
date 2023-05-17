@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 10% auto 0;
+            border: 1px solid salmon;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,100px);
+
+            /* Verticaly item alignment*/
+
+             /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: center; */
+            /* align-items: stretch; */
+
+            /* Horizontaly item alignment*/
+
+             /* justify-items: start; */
+             /* justify-items: end; */
+             /* justify-items: center; */
+             /* justify-items: stretch; */
+
+            /* Shortand for align-items and justify-items*/
+
+             place-items: center stretch;
+             /* place-items: stretch center; */
+             /* place-items: stretch stretch; */
+            
+        
+        }
+        .items{
+            background: greenyellow;
+
+        }
+        .item-1{
+            background: yellow;
+        }
+        .item-2{
+            background: rgb(0, 255, 89);
+
+            /* Verticaly self alignment*/
+
+            /* align-self: start; */
+            /* align-self: end; */
+            /* align-self: center; */
+            align-self: stretch;
+
+            
+
+        }
+        .item-3{
+            background: rgb(255, 196, 0);
+
+            /* Horizontaly self alignment*/
+
+            /* justify-self: start; */
+            /* justify-self: end; */
+            justify-self: center;
+            /* justify-self: stretch; */
+        }
+        .item-4{
+            background: rgb(255, 0, 0);
+
+             /* Shortand for align-self and justify-self*/
+
+             place-self: end center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">Three</div>
+        <div class="items item-4">Four</div>
+        
+    </div>
+</body>
+</html>

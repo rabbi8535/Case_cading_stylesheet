@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            width: 700px;
+            height: 600px;
+
+            margin: 10% auto 0;
+            border: 1px solid salmon;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(2,150px);
+            
+            /* Verticaly alignment content*/
+
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+
+             /* Horizentaly alignment content*/
+
+             /* justify-content: start; */
+             /* justify-content: end; */
+             /* justify-content: center; */
+             /* justify-content: space-between; */
+             /* justify-content: space-around; */
+             /* justify-content: space-evenly; */
+
+             /* Shortand for align and justify content*/
+             place-content: center center;
+            
+
+            
+            
+        
+        }
+        .items{
+            background: greenyellow;
+
+        }
+        .item-1{
+            background: yellow;
+            
+        }
+        .item-2{
+            background: rgb(0, 255, 89);
+
+
+            
+
+        }
+        .item-3{
+            background: rgb(255, 196, 0);
+
+           
+        }
+        .item-4{
+            background: rgb(255, 0, 0);
+
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">Three</div>
+        <div class="items item-4">Four</div>
+        
+    </div>
+</body>
+</html>

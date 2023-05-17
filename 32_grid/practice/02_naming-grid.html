@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body h1{
+            text-align: center;
+        }
+        .container{
+            width: 80%;
+            margin: 10% auto;
+            display: grid;
+
+            grid-template-rows:[header-start] 120px[header-end box12-start] 80px[box12-end box34-start] 150px[box34-end content-start] 200px[content-end footer-start]  80px[footer-end]
+             80px;
+            grid-template-columns: repeat(3,[col-start]1fr[col-end]);
+
+            /* column-gap: 10px;
+            row-gap: 25px; */
+            grid-gap:10px 15px
+
+        }
+        .items{
+
+        }
+        .header{
+            background: red;
+            grid-row: header-start/header-end;
+            grid-column: col-start 1/col-end 3;
+           
+        }
+        .box-1{
+            background: rgb(0, 255, 0);
+            
+        }
+        .box-2{
+            background: rgb(0, 132, 255);
+        }
+        
+        .box-3{
+            background: rgb(179, 0, 255);
+        }
+        .box-4{
+            background: rgb(238, 255, 0);
+        }
+        .navbar{
+            background: rgb(255, 0, 195);
+            grid-row: box12-start/content-end;
+            grid-column: col-start 3/col-end 3;
+           
+        }
+       
+        .content{
+            background: rgb(0, 229, 255);
+            grid-column: col-start 1/col-end 2;
+        }
+        .footer{
+            background: rgb(255, 242, 0);
+            grid-column: col-start 1/ col-end 3
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Grid-template-row,column,gaps</h1>
+    <div class="container">
+        <div class="items header">header</div>
+        <div class="items box-1">Box-1</div>
+        <div class="items box-2">Three</div>
+        <div class="items navbar">navbar</div>
+        <div class="items box-3">Box-3</div>
+        <div class="items box-4">Box-4</div>
+        <div class="items content">Content</div>
+        <div class="items footer">Footer</div>
+    </div>
+    
+</body>
+</html>

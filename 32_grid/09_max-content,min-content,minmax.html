@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 90%;
+            margin: 10% auto;
+            display: grid;
+            grid-template-rows: repeat(3,max-content) ;
+            grid-template-columns: repeat(2,minmax(250px ,50%));
+            grid-auto-rows: 150px;
+            grid-auto-columns: 1fr;
+            grid-auto-flow: dense;
+
+        }
+        .items{
+
+        }
+        .item-1{
+            background: red;
+           
+           
+        }
+        .item-2{
+            background: rgb(0, 255, 0);
+            
+            
+        }
+        .item-3{
+            background: rgb(0, 132, 255);
+            
+        }
+        .item-4{
+            background: rgb(255, 0, 195);
+           
+           
+        }
+        .item-5{
+            background: rgb(179, 0, 255);
+                    }
+        .item-6{
+            background: rgb(238, 255, 0);
+                   }
+        .item-6{
+            background: rgb(132, 106, 106);
+                   }
+        .item-7{
+            background: rgb(0, 229, 255);
+                       
+        }
+        .item-8{
+            background: rgb(255, 242, 0);
+                        
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>grid-area,order</h1>
+    <div class="container">
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aliquid minus sint minima enim, laborum animi cupiditate fuga quae aliquam voluptatum itaque culpa. Deserunt error veritatis suscipit sint quia minima, a ex similique laboriosam nostrum ea nihil quae voluptatum doloribus enim impedit recusa Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam suscipit, dolor excepturi omnis eligendi iusto quidem distinctio enim laudantium esse, recusandae repellat harum officiis impedit expedita, eaque nemo dolore dolorum optio. Quia unde nemo, ab enim assumenda, voluptates magnam, neque aliquam quis in quaerat ad vel ipsa nam commodi ipsum nesciunt porro animi tempora quasi fugiat architlorem100 d dicta ex at suscipit pariatur facere quia rerum?</div>
+        <div class="items item-4">Four</div>
+        <div class="items item-5">Five</div>
+        <div class="items item-6">Six</div>
+        <div class="items item-7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio consequuntur inventore ipsum. Voluptate harum repellendus quos ea a quod, nemo quaerat eum! Dolorem, possimus vitae amet optio accusantium odit culpa. Lorem </div>
+        <div class="items item-8">Eight</div>
+        <div class="items item-1">One</div>
+        <div class="items item-2">Two</div>
+        <div class="items item-3">Three</div>
+        <div class="items item-4">Four</div>
+        <div class="items item-5">Five</div>
+        <div class="items item-6">Six</div>
+        <div class="items item-7">Seven</div>
+        <div class="items item-8">Eight</div>
+    </div>
+    
+</body>
+</html>
