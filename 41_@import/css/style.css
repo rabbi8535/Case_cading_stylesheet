@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    background: #ccc;
+
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header li{
+    padding: 0px 15px;
+
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: black;
+
+}
