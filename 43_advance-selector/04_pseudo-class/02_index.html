@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        .anker a{
+            display: block;
+            line-height: 50px;
+        }
+        /*1.This pseudo selector select anker tag */ 
+        a:link{
+            color: black;
+            text-decoration: none;
+        }
+
+        /*2.This pseudo selector select anker tag when you click to hold*/
+        a:active{
+            color: red;
+        }
+
+        /*3.This pseudo selector slect anker tag when you clicked*/
+        /* a:visited{
+            color: blue;
+        } */
+
+        /*4.This pseudo selector select when you hover*/
+        a:nth-of-type(2):hover{
+            background: aqua;
+            color: red;
+
+        }
+        /*5.This pseudo selector select other content throug id*/
+        :target{
+            background: aquamarine;
+            border: 1px solid red;
+            text-align: justify;
+            padding: 20px;
+            transition: all 1s ease-in-out 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Part Two</h1>
+
+    <div class="anker">
+        <a href="#ex-1" >What is HTML ?</a>
+        <a href="#ex-2">What is CSS ?</a>
+        <a href="#ex-3">What is JS ?</a>
+    </div>
+<br><br>
+    <div class="explain" >
+        <div id="ex-1" class="ex-1">
+            <li>Hypertex markup language</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo aperiam voluptatibus! Exercitationem in nam autem et eaque soluta ducimus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis pariatur aspernatur laboriosam voluptate rerum modi eaque in mollitia ipsam debitis, minima aut architecto vero iste distinctio accusamus quaerat inventore eligendi? Porro, libero! Vitae necessitatibus expedita amet facilis consectetur magni et! Esse, ullam dolorem. Aliquam sunt nostrum impedit perspiciatis expedita tempora.</p>
+        </div>
+        <div id="ex-2">
+            <li>Case cading stylesheet</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo aperiam voluptatibus! Exercitationem in nam autem et eaque soluta ducimus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis pariatur aspernatur laboriosam voluptate rerum modi eaque in mollitia ipsam debitis, minima aut architecto vero iste distinctio accusamus quaerat inventore eligendi? Porro, libero! Vitae necessitatibus expedita amet facilis consectetur magni et! Esse, ullam dolorem. Aliquam sunt nostrum impedit perspiciatis expedita tempora.</p>
+        </div>
+
+        <div id="ex-3">
+            <li>Javascript</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo aperiam voluptatibus! Exercitationem in nam autem et eaque soluta ducimus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis pariatur aspernatur laboriosam voluptate rerum modi eaque in mollitia ipsam debitis, minima aut architecto vero iste distinctio accusamus quaerat inventore eligendi? Porro, libero! Vitae necessitatibus expedita amet facilis consectetur magni et! Esse, ullam dolorem. Aliquam sunt nostrum impedit perspiciatis expedita tempora.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

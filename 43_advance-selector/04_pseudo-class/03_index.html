@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 10% auto;
+
+        }
+        form{
+            width: 100%;
+            line-height: 50px;
+        }
+
+        /*1.This pseudo selector select when youfocus      text input*/
+        input:focus{
+            color: rgb(13, 255, 0);
+
+        }
+
+        /*2.This pseudo selector select when you focus     checqed and radio input*/
+        input:checked{
+            width: 10px;
+            height: 10px;
+        }
+
+        /*3.This pseudo selector select disabled input*/
+        input:disabled{
+           width: 100%;
+        }
+
+        /*4.This pseudo selector select enabled input*/
+        /* input:enabled{
+           width: 100%;
+        } */
+
+        /*5.This pseudo selector select requierd input*/
+        /* input:required{
+            width: 100%;
+            caret-color: red;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid blue;
+        } */
+
+        /*6.This pseudo selector select optional input*/
+        /* input:optional{
+            width: 100%;
+            caret-color: red;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid blue;
+        } */
+
+        /*7.This pseudo selector select read input*/
+         /* input:read-only{
+            background: rgb(67, 8, 42);
+         } */
+
+         /*8.This pseudo selector select read input*/
+         /* input:read-write{
+            color: rgb(76, 0, 255);
+         } */
+
+
+         /*9.This pseudo selector select range input for in-range*/
+         
+         input:in-range{
+            color: pink;
+         }
+
+         /*10.This pseudo selector select range input for out-of-range*/
+         input:out-of-range{
+            color: rgb(195, 192, 255);
+            background-color: red;
+         }
+
+         /*11.This pseudo selector select valid input*/
+         /* input:valid{
+            background-color: aqua;
+         } */
+
+         /*11.This pseudo selector select valid input*/
+         /* input:invalid{
+            background-color: transparent;
+            color: red;
+         } */
+
+         /*12.This pseudo selector select selected input*/
+         
+         :default{
+            background-color: red;
+            border: 5px solid blue;
+            
+         }
+
+         /*13. this pseudo selector select root */
+
+         /* :root{
+            color: red;
+         } */
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+        
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" 
+             placeholder="write your first name" ><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="name" 
+            placeholder="write your last name"><br>
+
+            <label for="gender">Choose Your Gender :           </label>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male" checked >Male</label>
+            <input type="radio" name="gender" id="fmale">
+            <label for="fmale">Fmale</label>
+            <input type="radio" name="gender" id="other" checked> 
+            <label for="other">Other</label><br>
+
+            <label for="country">Choose Your Country :          </label>
+
+            <select name="" id="">
+                <option value="bd" selected>Bangladesh</option>
+                <option value="ind">India</option>
+                <option value="pk">Pakistan</option>
+                <option value="ch">China</option>
+            </select><br>
+
+                <label for="disabled">Disabled :</label>
+                <input type="text" id="disabled" disabled>
+
+
+                <br>
+                <label for="requierd">Requiered :</label>
+                <input type="text" required>
+
+                <br>
+                <label for="read">Read :</label>
+                <input type="text" readonly>
+
+
+                <br>
+                <label for="r-w">Read-write :</label>
+                <input type="text" read-write>
+
+                <br>
+                <label for="range">Range :</label>
+                <input type="number" min="10" max="20"  id="range">
+               
+                <br>
+                <label for="mail">Mail :</label>
+                <input type="email" >
+                <br>
+                <label for="mail">Mail :</label>
+                <input type="checkbox"  checked>
+
+
+           
+        </form>
+    </div>
+</body>
+</html>

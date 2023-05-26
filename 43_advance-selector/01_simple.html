@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selector</title>
+    <style>
+        /* Style/Group Selector */
+        p{
+            color: aqua;
+            text-decoration: underline;
+        }
+
+        p,h2,h3{
+            color: blue;
+        }
+
+        /* Class Selector*/
+        .container{
+            width: 90%;
+            display: inline-block;
+            position: relative;
+            left: 50%;  
+            line-height: 50px;
+        }
+        
+        /* Id Selector */
+        #heading-1{
+            color: red;
+            font-size: 20px;
+        }
+
+        /* Universel Selector*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading-1">Heading One</h1>
+        <p>Paragraph One</p>
+        <h2>Heading Two</h2>
+        <p>Paragraph Two</p>
+        <h3>Heading Three</h3>
+        <p>Paragraph Three</p>
+        <span>Span</span>
+    </div>
+</body>
+</html>

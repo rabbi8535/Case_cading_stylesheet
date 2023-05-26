@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+
+        /* 1.this pseudo selector select first child in the div*/
+
+
+        /* p:first-child{
+            color: aqua;
+        } */
+
+
+
+        /* 2.this pseudo selector select last child in the div*/
+
+
+        /* p:last-child{
+            color: aqua;
+        } */
+
+
+        /* 3.this pseudo selector select customize element child in the div and outside also but top to bottom*/
+
+
+       /* div p:nth-child(2n+1){
+            color: aqua;
+        } */
+        /* div p:nth-child(odd){
+            color: aqua;
+        } */
+
+       /* div p:nth-child(2n){
+            color: aqua;
+        } */
+        /* div p:nth-child(even){
+            color: aqua;
+
+        } */
+
+
+        /* 4.this pseudo selector select customize element child in the div and outside also but bottom to top*/
+
+
+       /* div p:nth-last-child(2n+1){
+            color: aqua;
+        } */
+        /* div p:nth-last-child(odd){
+            color: aqua;
+        } */
+
+       /* div p:nth-last-child(2n){
+            color: aqua;
+        } */
+         /* p:nth-last-child(even){
+            color: aqua;
+
+        } */
+
+            /*5. this pseudo selector customizable child in the div and outside */
+        /* p:nth-of-type(5){
+            color: red;
+        } */
+
+        /*6. this pseudo selector customizable child in the div and outside but bottom to top*/
+        /* p:nth-last-of-type(2n+1){
+            color: red;
+        } */
+
+        /*7. this pseudo selector select only child in the div*/
+
+        /* p:only-child{
+            color: red;
+        } */
+
+
+        /* 8. this pseudo selector  if your given element only child but other can be in div then select only child */
+
+        /* p:only-of-type{
+            color: red;
+        } */
+
+
+        /*9. this pseudo selector select first  type of element if which element one then no matter it's  last or first in the div and outside also*/
+
+        /* p:first-of-type{
+            color: red;
+        } */
+
+        /* h2:first-of-type{
+            color: red;
+        }  */
+
+
+
+        /*10. this pseudo selector select last  type of element if which element one then no matter it's  last or first in the div and outside also*/
+
+
+        /* h2:last-of-type{
+            color: red;
+        } */
+
+        /*11. this pseudo selector select empty div or element*/
+        div:empty{
+            width: 300px;
+            height: 250px;
+            background: red;
+        }
+
+        /* 12. this pseudo selector select all element  selected element or div in the div*/
+
+        /* :not(p){
+            color: red;
+        }
+        p{
+            color: black;
+        } */
+
+
+        /* 13. this pseudo selector select  element with language attribute */
+
+        :lang(it){
+            color: brown;
+        }
+        :lang(fr){
+            color: red;
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum sequi eos corrupti sapiente accusantium ullam qui, eius totam eligendi quia nihil aliquid magnam beatae amet distinctio aspernatur repudiandae exercitationem maxime!</p>
+    <h1>Pseudo Class Part One</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, quaerat.</p>
+    <p>Lorem ipsum dolor sit amet.3</p>
+
+    <div>
+        <p lang="en">Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2 lang="it">hello</h2>
+    </div>
+    <ul>
+        <li lang="fr">Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li lang="bengali">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus?</li>
+    </ul>
+    <div>
+        <h2>heading three</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quidem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero iste magni explicabo quaerat reprehenderit! Hic enim iure eligendi, ipsam quia et similique officia facere dolorem, sunt pariatur quas, omnis porro.</p>
+        <h2>heading four</h2>
+        <p>Lorem, ipsum dolor.3</p>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt nam, beatae laboriosam asperiores quas eligendi eveniet nobis placeat quia laborum at dignissimos, natus illo sit, corrupti animi harum reiciendis.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ea a saepe libero veniam eveniet deleniti expedita rerum tempore quam. Cumque culpa, aperiam nam quo asperiores laborum maxime ab quam!</p>
+    </div>
+
+    <div>
+        <h2>learning</h2>
+        <p>Lorem ipsum dolor sit.1</p>
+        
+        
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum in modi repudiandae consequatur amet ex sed! Repellendus odit architecto repudiandae nam unde, enim omnis quod veniam dolores. Ea, harum reprehenderit?</p>
+    </div>
+
+    <h2>heading four</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div></div>
+    <p>Lorem ipsum dolor sit amet.5</p>
+
+    
+</body>
+</html>
