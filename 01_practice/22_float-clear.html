@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 90%;
+            background: #ccc;
+            margin: 5% auto;
+            padding: 20px;
+            /* display: flow-root; */
+        }
+        .card{
+            width: 40%;
+            background-color: aqua;
+            margin: 10px;
+            padding: 5px;
+            box-sizing: border-box;
+            
+        }
+        .card-1{
+            float: left;
+        }
+        .card-2{
+            float: none;
+            float: right;
+        }
+        .card-3{
+            width: 100%;
+            content: "";
+            display: table;
+
+            /* clear */
+            clear: left;
+            clear: right;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card card-1">
+            <h1>Card-1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+               adipisicing elit. Iure ut necessitatibus 
+               exercitationem quas eos assumenda dolorum 
+               voluptatum voluptates placeat ducimus enim 
+               modi, hic ratione quo similique fugit, 
+               fugiat aliquid excepturi!Lorem Lorem ipsum 
+               dolor, sit amet consectetur adipisicing 
+               elit. Assumenda libero quidem maxime nulla 
+               architecto tempora voluptatem, vel atque 
+               natus rem, porro magni quos consectetur 
+               repudiandae voluptatibus facere facilis  
+                ipsa fugit! </p>
+        </div>
+        <div class="card card-2">
+            <h1>Card-2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+               adipisicing elit. Iure ut necessitatibus 
+               exercitationem quas eos assumenda dolorum 
+               voluptatum voluptates placeat ducimus enim 
+               modi, hic ratione quo similique fugit, 
+               fugiat aliquid excepturi!Lorem Lorem ipsum 
+                dolor sit amet, consectetur adipisicing 
+               elit. Distinctio, voluptatum? Ab quasi 
+               officiis fuga nam, incidunt veritatis 
+               quod, reiciendis aspernatur sint 
+               molestias cumque enim et. Suscipit 
+               nemo labore doloremque amet? </p>
+        </div>
+        <div class="card card-3">
+            <h1>Card-3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+               adipisicing elit. Iure ut necessitatibus 
+               exercitationem quas eos assumenda dolorum 
+               voluptatum voluptates placeat ducimus enim 
+               modi, hic ratione quo similique fugit, 
+               fugiat aliquid excepturi!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

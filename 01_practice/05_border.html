@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        .container{
+            width: 720px;
+            margin: 5% auto;
+        }
+        div{
+            width: 320px;
+            margin: auto;
+            text-align: center;
+            border: 2px solid red;
+            margin-top: 10px;
+            padding: 5px;
+           
+        }
+        .div-1{
+            border: 1px solid red;
+            border-width: 5px;
+            border-color: aqua;
+
+        }
+        .div-2{
+            border-style: none;
+            border-top: 5px solid green ;
+        }
+        .div-3{
+            border-style: none;
+            border-right: 5px solid yellow ;
+        }
+        .div-4{
+            border-style: none;
+            border-bottom: 5px solid rgb(0, 13, 255) ;
+        }
+        .div-5{
+            border-style: none;
+            border-left: 5px solid rgb(255, 4, 0) ;
+        }
+        .none{
+            border-style: none;
+        }
+        .solid{
+            border-style: solid;
+        }
+        .dotted{
+            border-style: dotted;
+        }
+        .dashed{
+            border-style: dashed;
+        }
+        .groove{
+            border-style: groove;
+            border-width: 5px;
+        }
+        .ridge{
+            border-style: ridge;
+            border-width: 5px;
+        }
+        .inset{
+            border-style: inset;
+            border-width: 5px;
+        }
+        .outset{
+            border-style: outset;
+            border-width: 5px;
+        }
+        .mix{
+            border-style: dotted solid ridge inset;
+            border-width: 5px;
+        }
+        .hidden{
+            border-style: hidden;
+
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <h3>I have a border all side</h3>
+        </div>
+        <div class="div-2">
+            <h3>I have a border for top side</h3>
+        </div>
+        <div class="div-3">
+            <h3>I have a border for right side</h3>
+        </div>
+        <div class="div-4">
+            <h3>I have a border for bottom side</h3>
+        </div>
+        <div class="div-5">
+            <h3>I have a border for left side</h3>
+        </div>
+        <div class="none">
+            <h3>None style</h3>
+        </div>
+        <div class="solid">
+            <h3>Solid style</h3>
+        </div>
+        <div class="dotted">
+            <h3>Dotted style</h3>
+        </div>
+        <div class="dashed">
+            <h3>Dashed style</h3>
+        </div>
+        
+        <div class="groove">
+            <h3>Groove style</h3>
+        </div>
+        <div class="ridge">
+            <h3>Ridge style</h3>
+        </div>
+        <div class="inset">
+            <h3>Inset style</h3>
+        </div>
+        <div class="outset">
+            <h3>Outset style</h3>
+        </div>
+        <div class="mix">
+            <h3>Mix style</h3>
+        </div>
+        <div class="hidden">
+            <h3>Hidden style</h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../font/fontawesome-web/css/all.css">
+    <title>Text Alignment</title>
+    <style>
+        .container{
+            width:720px;
+            margin:10% auto;
+        }
+        .div-1{
+            width: 520px;
+            margin: auto;
+            border: 1px solid red;
+            padding: 20px;
+            font-size: 20px;
+        }
+        span{
+            display:inline-block;
+        }
+        .fa-solid{
+            color: red;
+            font-size: 20px;
+        }
+
+        .div-1 {
+            /* text align */
+            /* text-align: left;
+            text-align: right ;
+            text-align: center;
+            text-align: justify; */
+
+            /* text-align-last use for align last line*/
+            /* text-align-last: left;
+            text-align-last: right;
+            text-align-last: center;
+            text-align-last: justify;
+            text-align-last: start;
+            text-align-last: end;
+            text-align-last: auto; */
+
+           
+           
+
+        }
+        .div-1 img{
+             /*vertical-align work with img*/
+            vertical-align:baseline ;
+            vertical-align: text-top;
+            vertical-align: text-bottom;
+            vertical-align: sub;
+            vertical-align: super;
+
+
+        }
+        h3{
+             /* direction*/
+             direction: ltr;
+             direction: rtl;
+            /* unicode-bidi work with direction*/
+            unicode-bidi:bidi-override;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="div-1">
+            <h2>Text-Alignment</h2>
+           <p>Lorem ipsum dolor  <img src="../images/plant.jpg" alt="" width="24px" height="16px"> sit amet consectetur adipisicing elit. Temporibus sint cupiditate soluta. Eaque repellendus odit doloribus possimus rerum quam. Eveniet quo aspernatur placeat laboriosam distinctio obcaecati repellendus voluptatem nobis deleniti quis vel tempore non impedit nisi delectus repudiandae, doloremque sed!</p>
+        </div>
+    </div>
+    <h3>how are you</h3>
+</body>
+</html>

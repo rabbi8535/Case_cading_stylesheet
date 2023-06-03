@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80%;
+            height: 50vh;
+            margin: 10% auto;
+            background: aqua;
+        }
+        .card{
+            width: 200px;
+            display: inline-block;
+            background: orange;
+            margin: 5px;
+            padding: 5px;
+             box-sizing: border-box;
+             box-sizing: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1 card">
+            <h1>heading one</h1>
+            <p>Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Laboriosam suscipit nobis, obcaecati voluptates optio vero iste velit quos dolores nisi omnis, provident id necessitatibus tempore! Harum laborum officiis deserunt facere?</p>
+        </div>
+        <div class="div-2 card">
+            <h1>heading two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Laboriosam suscipit nobis, obcaecati voluptates optio vero iste velit quos dolores nisi omnis, provident id necessitatibus tempore! Harum laborum officiis deserunt facere?</p>
+        </div>
+        <div class="div-3 card">
+            <h1>heading three</h1>
+            <p>Lorem ipsum dolor sit amet consectetur,  adipisicing elit. Laboriosam suscipit nobis, obcaecati voluptates optio vero iste velit quos dolores nisi omnis, provident id necessitatibus tempore! Harum laborum officiis deserunt facere?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Spacing</title>
+    <style>
+        .container{
+            width: 720px;
+            margin: 10% auto;
+        }
+        .div-1{
+            width: 560px;
+            margin: auto;
+            border: 1px solid red;
+            text-transform: capitalize;
+            line-height: 20px;
+            text-align: justify;
+
+            /* text-indent used for which place to start 
+             text*/
+             /* text-indent: 20px; */
+
+             /* letter-spaccing used for between gap every 
+              alphabet*/
+              /* letter-spacing:20px ; */
+
+              /* word-spaceing used for beteen gap every 
+               word */
+               /* word-spacing: 20px; */
+        }
+
+        .div-2{
+            width: 560px;
+            margin: 20px auto;
+            border: 1px solid red;
+            text-transform: capitalize;
+            line-height: 20px;
+            text-align: justify;
+
+            /* white space*/
+
+            /* nowrap used for no wraping text*/
+            white-space:nowrap;
+
+            /* pre used for as its text */
+            white-space: pre; 
+
+            /* pre-line used for as its text but lining 
+             not counting space pre line */
+            white-space: pre-line;
+
+            /* like pre*/
+            white-space: pre-wrap;
+
+            /* normal by default wrap */
+            white-space: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <h3>Text Spacing</h3>
+            <p>Lorem ipsu  m dolor sit, amet consectetur adipisicing elit. Quam aut esse deserunt mollitia voluptatem excepturi ad obcaecati ducimus minus? Placeat dignissimos a minus libero, distinctio nobis labore deserunt commodi dolores! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illum sed excepturi maxime voluptas ex velit libero voluptatibus quibusdam tempora quae tenetur quo iure consectetur et earum explicabo omnis cum qui, sequi atque ullam possimus soluta error. A rerum soluta iusto error ipsam labore, omnis dolore, totam magni debitis delectus assumenda adipisci. Aspernatur animi, quia odit ab temporibus repellat ex maxime eligendi perspiciatis quisquam pariatur laboriosam nihil expedita impedit molestias voluptatibus aperiam error sit excepturi recusandae eos atque. Consectetur perspiciatis, autem eius unde exercitationem iste incidunt ducimus a veniam, voluptas doloremque at ut voluptate dignissimos repellat laudantium harum. lorem100</p>
+        </div>
+        <div class="div-2">
+            <h3>white space</h3>
+            <p>Lorem ipsum d olor sit,
+                 amet co                          
+                 nsectetur adipisicing elit.
+                  Quam aut esse deserunt mollitia 
+                   voluptatem 
+                  excepturi </p>
+        </div>
+    </div>
+</body>
+</html>

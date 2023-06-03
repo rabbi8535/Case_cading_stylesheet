@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 720px;
+            margin: 10% auto;
+        }
+        .overflow{
+            width: 500px;
+            margin: auto;
+            border: 5px double red;
+                        padding: 20px;
+
+            
+        }
+
+        .overflow p{
+            white-space: nowrap;
+            overflow: hidden;
+            /*text-overflow work with overflow-hidden and 
+             white-space nowrap*/
+
+             /*clip by default*/
+             text-overflow:clip ;
+
+            /* ellipse show end of para (...) mark*/
+            text-overflow: ellipsis;
+
+            /* also use custom string*/
+            text-overflow: ' etc.';
+        }
+    </style>
+    <title>Text-overflow</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overflow">
+            <h1>Text Overflow</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Accusantium perferendis
+                quae alias numquam atque asperiores
+                officia eaque sapiente, consectetur natus
+                quis odio vero blanditiis consequuntur
+                doloremque rerum itaque, dignissimos quos!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-clip</title>
+    <style>
+        .container{
+            width: 720px;
+            margin: 10% auto;
+             
+        }
+        .div-1{
+            background: yellowgreen;
+            padding: 15px;
+            border: 5px dotted black;
+
+            /* background-clip used for which place to 
+             start*/
+            background-clip: padding-box;
+            background-clip: border-box;
+            background-clip: content-box;
+
+        }
+        h1{
+            color: transparent;
+            background: url(../images/plant.jpg);
+            font-size: 50px;
+            /* text used for styling */
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Text style for styleing</h1>
+        <div class="div-1">
+            <h2>heading two</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, vel ex unde deleniti, quis, sit quod culpa illum autem maxime natus est voluptatibus perspiciatis dolor totam. Illo quidem voluptatum voluptatibus!</p>
+        </div>
+    </div>
+    
+        
+</body>
+</html>

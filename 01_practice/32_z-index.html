@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+         .container{
+            width: 80%;
+            margin: 10% auto;
+
+        }
+        .first-h1{
+            text-align: center;
+        }
+        .card{
+            width:350px;
+            position: absolute;
+            box-sizing: border-box;
+            margin: auto;
+            padding: 10px;
+            text-align: justify;
+            background: rgba(220, 12, 12, 0.747);
+
+           
+        }
+        .div-1{
+            top: 31%;
+            left: 34%;
+            background-color: red;
+            z-index: 4;
+        }
+        .div-2{
+            top: 36%;
+            left: 37%;
+            background-color: aqua;
+            z-index: 3;
+        }
+
+        .div-3{
+            top: 42%;
+            left: 41%;
+            background-color: cadetblue;
+            z-index: 2;
+         }
+
+         .div-4{
+            top: 49%;
+            left: 45%;
+            background-color: burlywood;
+            z-index: 1;
+           }
+
+    </style>
+   
+</head>
+<body>
+    <h1 class="first-h1">Z-index</h1>
+    <div class="container">
+        
+        <div class="div-1 card">
+            <h1>First div</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam voluptatibus nihil quisquam a perspiciatis maxime facere fugiat corrupti, architecto aliquam placeat esse ullam, obcaecati, dolor veniam recusandae magni nam!</p>
+        </div>
+
+        <div class="div-2 card">
+            <h1>Second div</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam voluptatibus nihil quisquam a perspiciatis maxime facere fugiat corrupti, architecto aliquam placeat esse ullam, obcaecati, dolor veniam recusandae magni nam!</p>
+        </div>
+        <div class="div-3 card">
+            <h1>Third div</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam voluptatibus nihil quisquam a perspiciatis maxime facere fugiat corrupti, architecto aliquam placeat esse ullam, obcaecati, dolor veniam recusandae magni nam!</p>
+        </div>
+        <div class="div-4 card">
+            <h1>Fourth div</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam voluptatibus nihil quisquam a perspiciatis maxime facere fugiat corrupti, architecto aliquam placeat esse ullam, obcaecati, dolor veniam recusandae magni nam!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

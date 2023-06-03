@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            width: 720px;
+            margin: 10% auto;
+        }
+        .word-wrap,.word-break{
+            width: 500px;
+            margin: 20px auto;
+            border: 5px double red;
+            padding: 20px;
+           
+                                   
+        }
+             /*word-wrap*/
+        .a{
+            
+            /* break word break all word which 
+             overflow*/
+            word-wrap:break-word ;
+
+            /* default*/
+            /* word-wrap:normal ; */
+        }
+
+            /*word-break*/
+        .b{
+            /* break-all break all word and with adjust 
+             white space*/
+            word-break: break-all;
+
+            /* default*/
+            /* word-break: keep-all; */
+        }
+        
+        
+    </style>
+    <title>word-wrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="word-wrap">
+            <h1>Word-wrap</h1>
+            <div class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quis quibusdam iure quidem, accusantium, vero quasi very long long lolog long lolgn olgl lo gl aljldskjlk olllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllddddddddddddddddddddddddddddddddddddddddddddddd veritatis in non, nisi numquam voluptatem at doloremque animi eligendi aspernatur est neque veniam!</p></div>
+        </div>
+
+        <div class="word-break">
+            <h1>Word-break</h1>
+            <div class="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quis quibusdam iure quidem, accusantium, vero quasi very long long lolog long lolgn olgl lo gl aljldskjlk olllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllddddddddddddddddddddddddddddddddddddddddddddddd veritatis in non, nisi numquam voluptatem at doloremque animi eligendi aspernatur est neque veniam!</p></div>
+        </div>
+    </div>
+</body>
+
+</html>
