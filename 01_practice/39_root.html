@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root var</title>
+    <style>
+        :root{
+            --main-background-color:red;
+            --main-color:pink;
+        }
+        .div-1{
+            width: 250px;
+            height: 250px;
+            background-color:var(--main-color) ;
+            color: var(--main-background-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1">
+        <h2>root item</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus vero assumenda laudantium ab repellat, in unde, ipsum et suscipit commodi aperiam totam amet enim eaque, doloribus dolore ullam? Nulla.</p>
+    </div>
+    
+</body>
+</html>

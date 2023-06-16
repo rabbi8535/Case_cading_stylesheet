@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 10% auto;
+            text-align: center;
+        }
+        table,tr,td,th{
+            border: 1px solid black;
+            
+        }
+        table{
+    
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .table{
+            width: 50%;
+            margin: auto;
+            display: table;
+            border: 1px solid black;
+            
+            
+            
+  
+        }
+        .row{
+            display: table-row;
+            border: 1px solid black;
+            display: table-footer-group ;
+            display: table-header-group;
+
+        
+        }
+        .cell{
+            display: table-cell;
+            border: 1px solid black;
+           
+           
+            
+        }
+       
+        .caption{
+            display: table-caption;
+            text-align: center;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container-1 container">
+        <table>
+            <tr>
+                <th>
+                    First-Name
+                </th>
+                <th>
+                    Last-Name
+                </th>
+                <th>
+                    Salary
+                </th>
+                <th>
+                    designation
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                   Md
+                </td>
+                <td>
+                    Rabbi
+                </td>
+                <td>
+                   12,000 taka
+                </td>
+                <td>
+                  commercial assistant
+                </td>
+            </tr>
+        
+        </table>
+    </div>
+            
+    
+    <div class="container-2 container">
+        <div class="table">
+            <div class="caption">Caption</div>
+            <div class="row">
+                <div class="cell">
+                    First-Name
+                </div>
+                <div class="cell">
+                    Last-Name
+                </div>
+                <div class="cell">
+                    Salary
+                </div>
+                <div class="cell">
+                    designation
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell cell-1">
+                   Md
+                </div>
+                <div class="cell">
+                    Rabbi
+                </div>
+                <div class="cell">
+                   12,000 taka
+                </div>
+                <div class="cell">
+                  commercial assistant
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                   Mst
+                </div>
+                <div class="cell">
+                    Ranju akter
+                </div>
+                <div class="cell">
+                   12,000 taka
+                </div>
+                <div class="cell">
+                  commercial assistant
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

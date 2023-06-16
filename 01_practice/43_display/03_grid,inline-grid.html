@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid, Inline-grid</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 10% auto;
+            display:grid;
+            /* display:inline-grid; */
+            grid-template-rows: 100px 100px 50px 200px 90px ;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: "header header header" 
+                                 "menu menu menu"
+                                 "box-1 box-1 side"
+                                 "content content side"
+                                 "footer footer footer";
+            grid-gap:10px
+        }
+
+        .header{
+            background-color: yellow;
+            grid-area: header;
+        }
+        .menu{
+            background-color: red;
+            grid-area: menu;
+        }
+        .box{
+            background-color: aqua;
+           
+        }
+        .side{
+            background-color: cadetblue;
+            grid-area: side;
+        }
+        .content{
+            background-color: bisque;
+            grid-area: content;
+        }
+        .footer{
+            background-color: blueviolet;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="side">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

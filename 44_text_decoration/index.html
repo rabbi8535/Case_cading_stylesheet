@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-decoration</title>
+    <style>
+        .container{
+            text-transform: capitalize;
+            & h1{
+                text-align: center;
+            }
+            & h3:nth-of-type(1){
+                text-decoration-line: overline;
+                text-decoration-line: underline;
+                text-decoration-line: line-through;
+            }
+            & h3:nth-of-type(2){
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-style: dotted;
+                text-decoration-style: dashed;
+                text-decoration-style: double;
+                text-decoration-style: wavy;
+                
+            }
+            & h3:nth-of-type(3){
+                text-decoration-line: underline;
+                text-decoration-style: double;
+                text-decoration-color: aqua;
+            }
+            & h3:nth-of-type(4){
+                text-decoration-line: overline;
+                text-decoration-thickness: 5px;
+            }
+            & h3:nth-of-type(5){
+                text-decoration: underline 3px wavy     hsla(190,30%,50%);
+            }
+            & h3:nth-of-type(6){
+                text-decoration: underline 3px wavy     hsla(390,30%,50%);
+                text-underline-offset: 2rem;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Text-decoration</h1>
+    <h3>text-decoration-line</h3>
+    <h3>text-decoration-style</h3>
+    <h3>text-decoration-color</h3>
+    <h3>text-decoration-thickness</h3>
+    <h3>text-decoration</h3>
+    <h3>text-decoration-offset</h3>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiant</title>
+    <style>
+        .container{
+            width: 90%;
+            margin: 10% auto;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .box{
+            width:30%;
+            height: 250px;
+            margin: 10% 5%;
+        }
+        .div-1{
+            background-color: rgb(36, 33, 33);
+            /* linear-gradiant and repeating-linear- 
+             gradiant*/
+            /* background-image: linear-gradient(to bottom 
+             right,red,green,blue,yellow,aqua) */
+
+             /* background-image: linear-gradient(to 
+              bottom left,red,green,blue,yellow,aqua) */
+
+              /* background-image: linear-gradient(to top 
+             left,red,green,blue,yellow,aqua) */
+
+             /* background-image: linear-gradient(to top 
+             right,red,green,yellow) */
+
+             /* background-image: linear-gradient(to right 
+             ,green,yellow) */
+
+             /* background-image: linear-gradient(to left 
+             ,green,yellow) */
+
+            /* background-image: linear-gradient(to bottom 
+             ,green,yellow) */
+
+         /* background-image: linear-gradient(to left top 
+             ,green,yellow) */
+
+             /* background-image: linear-gradient(180deg 
+             ,green,yellow) */
+
+             /* background-image: repeating-linear-gradient(red,green,yellow) */
+
+background-image: repeating-linear-gradient(red 30%,green 30%,yellow )
+             
+        }
+
+        .div-2{
+            /* radial-gradiant*/
+            background-color: yellowgreen;
+
+            /* background-image: radial-gradient(circle at 50% 20%,red,green,pink); */
+
+            /* background-image: radial-gradient(closest-side at 50% 20%,red,green,pink); */
+
+            /* background-image: radial-gradient(closest-corner at 50% 50%,red,green,pink); */
+
+            /* background-image: radial-gradient(farthest-side at 50% 20%,red,green,pink); */
+
+            /* background-image: radial-gradient(farthest-corner at 50% 70%,red,green,pink); */
+
+
+            background-image: repeating-radial-gradient(farthest-side at 50% 20%,red,green,pink);
+
+        }
+
+        .div-3{
+            background-color: aqua;
+            border-radius: 50%;
+
+            /* background-image: conic-gradient(red,green,blue); */
+
+            /* background-image: conic-gradient(red 90deg,green 180deg,blue 270deg); */
+
+            background-image: conic-gradient(red 0deg,red 90deg,blue 90deg,blue 180deg,green 180deg,green 270deg,pink 270deg);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1 box"></div>
+        <div class="div-2 box"></div>
+        <div class="div-3 box"></div>
+        <div class="div-4 box"></div>
+        <div class="div-5 box"></div>
+    </div>
+</body>
+</html>
