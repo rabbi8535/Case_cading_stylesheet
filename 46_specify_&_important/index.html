@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specify & Important</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        .container{
+            width: calc(100vw - 200px);
+            margin: 5% auto;
+            line-height: 2.5rem;
+            
+            & h1{
+                text-align: center;
+                text-transform: uppercase;
+                word-spacing: 10px;
+                letter-spacing: 5px;
+            }
+
+            /* specify number = 1*/
+            & p{
+                margin: 5% auto;
+                text-align: justify;
+                line-height: 30px;
+                font-style: italic;
+                font-weight: bolder;
+                text-transform: capitalize;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+
+                /* but !important attribute make to top 
+                 priority*/
+                color: blue !important;
+            }
+
+            /* specify number = 10 */
+            .para{
+                color: aqua ;
+            }
+
+            /* specify number = 100 */
+            #para{
+                color: rgba(255, 0, 16, 0.699) 
+                 ;
+            }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">specify & important</h1>
+
+       <!-- specify number for inline css = 1000 -->
+        <p class="para" id="para" style="color:red">
+            Lorem, ipsum dolor sit amet consectetur 
+            adipisicing elit. Iusto officiis asperiores, 
+            perferendis sunt corporis et. Pariatur eum 
+            eaque accusantium cum odit? Quibusdam id 
+            debitis repellendus error accusantium esse eum 
+            magnam?</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-drop-filter</title>
+    <style>
+        body{
+            
+             
+        }
+        .container{
+            width: 80%;
+            margin: 5% auto;
+            background: url(../images/16.jpg) 
+            no-repeat center center;
+            background-size: cover;
+           
+            
+        }
+        .inner{
+                width: 450px;
+                height: 500px;
+                margin:30% auto;
+                background:transparent;
+                text-align: center;
+                line-height: 290px;
+                font-size: xx-large;
+                /* like filter but use inner div with 
+                 transparent color or without color*/
+                backdrop-filter:brightness(10%);
+                backdrop-filter:saturate(190%);
+                backdrop-filter:contrast(150%);
+                backdrop-filter:grayscale(100%);
+                backdrop-filter:invert(100%);
+                backdrop-filter:sepia(100%);
+                backdrop-filter:drop-shadow(2px 5px 25px 
+                 red);
+                backdrop-filter:opacity(0.5);
+                backdrop-filter:blur(20px);
+                backdrop-filter:hue-rotate(120deg);
+                backdrop-filter: none;
+                
+
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <h4>Back-drop-filter</h4>
+        </div>
+    </div>
+    
+</body>
+</html>

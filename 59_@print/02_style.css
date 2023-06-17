@@ -1,0 +1,36 @@
+
+/* when print only first page will be apply*/
+/* @page:first{
+    margin: 1in 2in;
+} */
+
+/* when print  right page like 1,3,5,7... will be apply*/
+/* @page:right{
+    margin: 20% 10%;
+    size: landscape;
+} */
+
+/* when print right page like 3,5,7... will be apply*/
+/* @page:left{
+    margin: 2in 1.5in 30px 20px;
+    size: letter;
+    size: legel;
+} */
+
+
+
+table{
+    /* it's use for before break when print*/
+    break-before: page;
+    break-before: avoid; /*default*/
+
+    /*it's use for after break when print*/
+    break-after: page;
+    break-after: avoid; /* default */
+
+    /*it's make break when overflow data neither not take 
+     break */
+    break-inside: avoid;
+    break-inside: page;
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        /* is pseudo class selct whice element passed*/
+        /* :is(.div-1,li,h2){
+            color: red;
+        }
+
+       :is(ul) :is(li,h2){
+        color: red;
+       } */
+
+       /* has pseudo class slect parent through child*/
+
+       .div-1:has(h1){
+        color: red;
+       }
+
+        
+           </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <ul>
+                <li>List-1</li>
+                <li>List-2</li>
+                <li>List-3</li>
+                <li>List-4</li>
+                <li>List-5</li>
+            </ul>
+            <ol>
+                <li>List-1</li>
+                <li>List-2</li>
+                <li>List-3</li>
+                <li>List-4</li>
+                <li>List-5</li>
+            </ol>
+        </section>
+        <nav>
+            <ul>
+                <li>List-1</li>
+                <li>List-2</li>
+                <li>List-3</li>
+                <li>List-4</li>
+                <li>List-5</li>
+            </ul>
+            <ol>
+                <li>List-1</li>
+                <li>List-2</li>
+                <li>List-3</li>
+                <li>List-4</li>
+                <li>List-5</li>
+            </ol>
+        </nav>
+        <h2>heading 2 <a href="">link</a></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In magni, sint repudiandae adipisci pariatur error voluptatum fugiat quidem quod quas quasi provident esse maiores laborum similique amet doloremque ad aut!</p>
+        <div class="div-1">
+            <h1>heading one </h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est facere quas iure exercitationem. Tenetur harum ex ratione at exercitationem eaque sit. Qui voluptatem provident earum amet, voluptate maxime quidem modi.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-style</title>
+    <style>
+        .container{
+            width: 520px;
+            margin: 5% auto;
+            & h1{
+                text-align: center;
+            }
+            .col{
+                text-transform: capitalize;
+                display: list-item;
+                line-height: 50px;
+               
+
+                /* unorder List style type*/
+                list-style-type: disc;
+                list-style-type: circle;
+                list-style-type: square;
+                list-style-type: " What's ";
+
+                /* order List style type*/
+                list-style-type: decimal;
+                list-style-type: decimal-leading-zero;
+                list-style-type: upper-alpha;
+                list-style-type: lower-alpha;
+                list-style-type: upper-roman;
+                list-style-type: lower-roman;
+
+
+                /* List style position*/
+                list-style-position: inside;
+                list-style-position: outside;
+
+
+                /* List style imgage*/
+                list-style-image: 
+                 url(../images/bullet4.gif);
+
+                 /* Shortand list style*/
+                 list-style: decimal-leading-zero inside 
+                  url(../images/bullet2.gif);
+
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>List-style</h1>
+        <div class="row">
+            <div class="col">
+                hyper text markup language
+            </div>
+            <div class="col">
+                case cadding stylesheet
+            </div>
+            <div class="col">
+                javascript
+            </div>
+            <div class="col">
+                node js
+            </div>
+            <div class="col">
+                express js
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        form{
+            width: calc(100% - 20%);
+            margin: 5% auto;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 40px;
+           
+            & input:not(input[type='radio']){
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                border-bottom:1px solid #ccc ;
+            }
+            & input:last-child{
+                margin-top: 10px;
+                background-color: aqua;
+                border: none;
+                
+            }
+        }
+
+        /* focus-within pseudo class use for styleing 
+         when focus form also use like focus*/
+        form:focus-within{
+            background-color: yellow;
+            border: none;
+            border-bottom: 1px none black;
+            outline: 1px solid rgb(30, 255, 0);
+            caret-color: aqua;
+            color: red;
+        }
+
+        /* focus pseudo class only use for styleing 
+         text input */
+        input:focus{
+            background-color: yellow;
+            border: none;
+            border-bottom: 1px none black;
+            outline: 1px solid rgb(30, 255, 0);
+            caret-color: aqua;
+            color: red;
+        }
+
+        /* placeholder-show  class use for styleing 
+        text,textarea input which have place holder */
+        input:placeholder-shown{
+            background: #ccc;
+            
+        }
+
+        .fullscreen,button {
+            width: 150px ;
+            height: 50px;
+            position: relative;
+            top: -30px;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        /* fullscreen pseudo class use for styleing when 
+         fullscreen mode*/
+        :fullscreen{
+            background-color: gainsboro;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>Registration Form</legend>
+
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" 
+                 placeholder="Your first name"><br>
+
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" 
+                 placeholder="Your last name"><br>
+
+                <label for="email">Your e-mail :</label>
+                <input type="email" id="email" 
+                 placeholder="Your mail address"><br>
+
+                <label for="gender">Your gender :
+                </label>
+
+                <input type="radio" name="gender" 
+                 id="male">
+                <label for="male">Male</label>
+
+
+                <input type="radio" name="gender" 
+                 id="fmale">
+                <label for="fmale">Fmale</label>
+
+
+                <input type="radio" name="gender" 
+                 id="other">
+                <label for="other">Other</label><br>
+
+                <label for="country">Choosen :</label>
+                <select name="country" id="country">
+
+                    <option value="bd">
+                        Bangladesh</option>
+                    <option value="ind">
+                        India</option>
+                    <option value="pk">
+                        Pakistan</option>
+                    <option value="Myn">
+                        Myanmar</option>
+
+                </select><br>
+
+                <label for="pass">
+                    Creat password :
+                </label>
+                <input type="password" name="" id="pass" 
+                 minlength="8"><br>
+
+                <label for="pass">
+                    Confirm password :
+                </label>
+                <input type="password" name="" id="pass" 
+                 minlength="8"><br>
+
+                 <input type="submit" value="Submit">
+
+            </fieldset>
+        </form>
+    </section>
+
+    <div class="fullscreen">
+        <button onclick="openFullscreen()">Open full 
+        screen</button>
+        <button onclick="closeFullscreen()">Close full 
+            screen</button>
+    </div>
+</body>
+
+<script>
+    var ele = document.documentElement;
+
+    function openFullscreen(){
+        if(ele.requestFullscreen){
+            ele.requestFullscreen();
+        }
+    }
+    
+    function closeFullscreen(){
+        if(document.exitFullscreen){
+            document.exitFullscreen();
+        }
+    }
+</script>
+
+</html>

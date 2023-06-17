@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text orientaion</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 5% auto;
+        }
+        .div-1{
+            height: 520px;
+            aspect-ratio: 1/1;
+            background: aqua;
+            padding: 20px;
+            writing-mode: vertical-lr;
+            
+            /*text-oreintaion work with upright*/
+            text-orientation: mixed; /* default*/
+            text-orientation: sideways;
+            text-orientation: sideways-right;
+            text-orientation: upright;
+            
+            
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <h1>text-orientaion</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas non, autem rem ipsum animi quas. Ipsa blanditiis laborum quod nam ipsam nobis numquam ut aperiam vitae autem, qui reiciendis maiores.</p>
+        </div>
+    </div>
+</body>
+</html>

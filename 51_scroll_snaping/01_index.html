@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snaping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            /* scroll-snap-type use for magnatic */
+            
+            /* y mandatory work y-axis*/
+            scroll-snap-type: y mandatory;
+
+            /* y proximity work y-axis but not working 
+             down to up*/
+            scroll-snap-type: y proximity;
+        }
+        .section{
+            width: 100vw;
+            height: 100vh;
+            font-size: 5rem;
+            text-align: center;
+            line-height: 100vh;
+
+            /*scroll-snap-align use for which place to 
+             start maganatic filed*/
+            scroll-snap-align: start;
+            scroll-snap-align: center;
+            scroll-snap-align: end;
+        }
+        .section-1{
+            background-color: yellow;
+
+        }
+        .section-2{
+            background-color: rgb(0, 255, 17);
+            
+        }
+        .section-3{
+            background-color: rgb(72, 0, 255);
+            
+        }
+        .section-4{
+            background-color: rgb(255, 0, 179);
+            
+        }
+        .section-5{
+            background-color: rgb(255, 0, 0);
+            
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="section-1 section">Section-1</div>
+        <div class="section-2 section">Section-2</div>
+        <div class="section-3 section">Section-3</div>
+        <div class="section-4 section">Section-4</div>
+        <div class="section-5 section">Section-5</div>
+    
+</body>
+</html>

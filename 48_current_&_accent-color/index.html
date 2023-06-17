@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* color: rgb(251, 152, 239); */
+            .div-1{
+                /* currentcolor property take parent 
+                 color*/
+               /* background-color:currentcolor; */
+            }
+           
+        }
+       input[type="radio"],input[type="checkbox"] {
+                accent-color: red;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div-1">
+            <h1>heading one</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fugiat nisi officiis saepe quaerat, consequuntur adipisci ullam consectetur necessitatibus corrupti ea exercitationem nostrum odio. Consequatur eos reiciendis architecto velit non?</p>
+        </div>
+
+        <label for="gender">Choose gender</label>
+        <label for="fmale">Fmale</label>
+        <input type="radio" name="gender" id="fmale">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other"><br><br>
+
+
+        <label for="language">Choose language</label>
+        <label for="html">Html</label>
+        <input type="checkbox" name="language" id="html">
+        <label for="css">Css</label>
+        <input type="checkbox" name="language" id="css">
+        <label for="js">Javascript</label>
+        <input type="checkbox" name="language" id="js">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inset</title>
+    <style>
+        .container{
+            width: 80%;
+            margin: 5% auto;
+        }
+        .outer{
+            height: 320px;
+            aspect-ratio: 2/1;
+            background-color: green;
+            position: relative;
+
+            .inner{
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                border-radius: 50%;
+                position: absolute;
+
+                /* shortand for top */
+                inset-block-start: 4px;
+
+                /* shortand for bottom */
+                inset-block-end: 4px;
+
+                /* shortand for top & bottom*/
+                inset-block: 77px;
+
+                /* shortand for top */
+                inset-inline-start: 4px;
+
+                /* shortand for bottom */
+                inset-inline-end: 4px;
+
+                 /* shortand for left & right*/
+                 inset-inline: 254px;
+
+                 /* shortand for top,bottom,left & right*/
+                inset: 77px 254px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+            <div class="inner">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

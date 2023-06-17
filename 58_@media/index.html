@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media</title>
+    <style>
+        /* @media (prefers-color-scheme:light){
+            body{
+                background-color: aqua;
+            }
+        }
+        @media (prefers-color-scheme:dark){
+            body{
+                background-color: rgb(0, 8, 255);
+            }
+        } */
+
+        @media (-webkit-oreintaion:landscape){
+            body{
+                color: red;
+
+            }
+        }
+
+        @media (-webkit-oreintaion:portrait){
+            body{
+                color: rgb(52, 33, 96);
+
+            }
+        }
+
+        /* @media(display-mode:browser){
+            body{
+                background-color: gainsboro;
+            }
+        }
+        @media(display-mode:minimal-ui){
+            body{
+                background-color: gold;
+            }
+
+        }
+        @media(display-mode:fullscreen){
+            body{
+                background-color: rgb(170, 212, 19);
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>@Media</h1>
+        <ol>
+            <li>Prefer-color-scheme</li>
+            <li>Display-mode</li>
+            <li>Orientaion</li>
+        </ol>
+    </div>
+</body>
+</html>

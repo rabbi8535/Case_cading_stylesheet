@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .container{
+
+    width: 90%;
+    margin: 5% auto;
+
+    .header{
+        width: 100%;
+
+       & nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .logo a{
+                text-decoration: none;
+                font-size: xx-large;
+                text-align: center;
+                
+
+
+            }
+
+            & ul{
+                display: flex;
+                list-style: none;
+
+                & li{
+                    padding: 0 25px;
+
+                    & a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+            }
+        }
+    }
+} */
+
+.container{
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-rows: 150px 120px 300px 350px 150px ;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+
+    grid-template-areas: 'header header header'
+                          'hero hero hero'
+                          'box-1 box-2 sidebar'
+                          'content content sidebar'
+                          'footer footer footer';
+
+     .header{
+        background-color: gray;
+        grid-area: header;
+
+        & nav{
+            width: 100%;
+            margin: 5% auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+            & ul{
+                list-style: none;
+                display: flex;
+
+               & li{
+                    padding: 0 15px;
+               }
+            }
+        }
+     }
+     .hero{
+        background-color: rgb(215, 188, 9);
+        grid-area: hero;
+     }
+     .box-1{
+        background-color: rgb(215, 188, 9);
+        grid-area: box-1;
+       
+     }
+     .box-2 {
+        background-color: red;
+        grid-area: box-2;
+     }
+     .sidebar{
+        background-color: aqua;
+        grid-area: sidebar;
+     } 
+     .content{
+        background-color: cadetblue;
+        grid-area: content;
+        /* overflow: auto; */
+
+        & table{
+            width: 90%;
+            margin: 5% auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+            
+            
+            & tr,td,th{
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+        }
+     } 
+     .footer{
+        background-color: brown;
+        grid-area: footer;
+     }                   
+}

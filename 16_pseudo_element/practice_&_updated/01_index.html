@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        .container {
+            width: calc(100vw - 20vw);
+            margin: 5% auto;
+
+            & h1 {
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            & ul {
+                list-style: decimal-leading-zero;
+                line-height: 30px;
+
+
+                /* first letter pseudo element select 
+                 first-alphabet*/
+                :first-child::first-letter {
+                    text-transform: uppercase;
+                    font-size: 50px;
+                    color: red;
+                }
+
+                /* first line pseudo element select 
+                first-line*/
+                :last-child::first-line {
+                    text-transform: capitalize;
+                    color: red;
+                }
+
+                /* marker pseudo element select 
+                 ul/ol numbering */
+                ::marker {
+                    font-size: x-large;
+                    color: hsla(140, 50%, 60%, 1);
+                }
+
+                & li {
+                    text-transform: lowercase;
+                    word-spacing: 10px;
+                    letter-spacing: 2px;
+
+                    & a {
+                        text-decoration: none;
+
+                    }
+                }
+            }
+
+            .input {
+                line-height: 50px;
+
+                /* placeeholder pseudo element select 
+                 placeholder on input type text */
+                ::placeholder {
+                    text-transform: capitalize;
+                    color: rgb(138, 199, 46);
+                    text-align: center;
+                }
+
+                /* file-selector-button pseudo element 
+                 select placeholder on input type file */
+                ::file-selector-button {
+                    width: 100px;
+                    height: 40px;
+                    cursor: pointer;
+                    background-color: yellow;
+                    font-weight: bold;
+                    border: 1px solid rgb(17, 255, 0);
+                    transition: all 1s;
+
+
+
+                }
+
+                ::file-selector-button:hover {
+                    transform: translate(100px) 
+                     scale(1.5);
+                    font-size: small;
+                    outline: 1px solid greenyellow;
+
+
+                }
+
+            }
+
+            .div-2 {
+                width: 500px;
+                height: 450px;
+                background: gray;
+                margin: 5% auto;
+                padding: 10px;
+                text-align: justify;
+                text-transform: capitalize;
+                word-spacing: 10px;
+                letter-spacing: 1px;
+                line-height: 30px;
+                overflow: auto;
+                
+
+                & h3 {
+                    text-align: center;
+
+                    /* before pseudo element select for  
+                    before  element*/
+                    &::before {
+                        content: "<";
+                    }
+
+                    /* after pseudo element select for  
+                    after  element*/
+                     &::after {
+                    content: " >";
+                     }
+
+                }
+
+
+                
+                /*scrollbar pseudo element slect 
+                 scrollbar*/
+                &::-webkit-scrollbar {
+                    width: 20px;
+                    background-color: rgba(255, 0, 0, 
+                     0.635);
+                     border-radius: 20px;
+                }
+                /*scrollbar-thumb pseudo element slect 
+                 scrollbar-thmb*/
+                &::-webkit-scrollbar-thumb {
+                    width: 220px;
+                    background-color: rgb(0, 255, 0);
+                    border-radius: 20px;
+                }
+                /*scrollbar-track pseudo element slect 
+                 scrollbar-track*/
+                &::-webkit-scrollbar-track {
+                    width: 20px;
+                    background-color: rgba(0, 55, 255, 
+                     0.144);
+                }
+                /*scrollbar-corner pseudo element slect 
+                 scrollbar-corner */
+                 &::-webkit-scrollbar-corner {
+                    width: 20px;
+                    background-color: rgba(0, 255, 153, 
+                     0.598);
+                     
+                }
+
+            }
+
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>pseudo element</h1>
+
+        <ul>
+            <li>
+                <a href="#">
+                    List-1 Lorem ipsum dolor sit amet.
+                </a>
+            </li>
+            <li><a href="#">List-2</a></li>
+            <li><a href="#">List-3</a></li>
+            <li><a href="#">List-4</a></li>
+            <li>
+                List-5 Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Odit,
+                quibusdam.
+            </li>
+        </ul>
+
+        <div class="input">
+
+            <label for="fname">Frist-Name : </label>
+            <input type="text" id="fname" placeholder="type your first name"><br>
+
+            <label for="file">Choose-file : </label>
+            <input type="file" id="file">
+
+        </div>
+
+        <div class="div-2">
+            <h3> Heading three</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quasi necessitatibus nam nulla voluptatum
+                illo placeat, pariatur repellat dignissimos aliquam aperiam sit inventore ducimus porro quo iure
+                obcaecati at commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eveniet fuga
+                aperiam magni deleniti deserunt autem. Minima, blanditiis aliquid aperiam porro minus fugit, sit natus
+                cum cumque facilis quaerat ullam dolores quia magnam asperiores necessitatibus sequi eius a, sint nihil
+                dolore alias mollitia. Dolorem voluptas laudantium consectetur dolor corrupti illo quas eos
+                exercitationem iure voluptatem repudiandae ullam cumque, quam velit unde placeat et commodi, nisi
+                tempora iusto animi? Enim quidem ut facere vero dolore debitis necessitatibus et dolor quas dolorum
+                laboriosam, placeat, voluptate tempora quos ea obcaecati optio? Corporis hic deleniti quos tempore, quis
+                id quaerat atque rem asperiores unde explicabo necessitatibus consequatur voluptatibus voluptatum
+                provident labore amet cumque maxime eveniet libero. Ad pariatur doloremque aliquam at aliquid sint
+                itaque accusantium ratione alias nobis quibusdam quis sunt vero, cumque esse veritatis dolorem! Aut
+                labore amet temporibus praesentium perspiciatis! Nostrum id, molestiae aliquid error quidem porro
+                consectetur iusto officiis. Modi, incidunt error id labore autem accusantium vero necessitatibus sed
+                sunt ea aut est blanditiis a officiis facilis sit pariatur laudantium temporibus adipisci! Iure vero
+                consectetur fugiat ducimus rem reiciendis repellat, eos dolore nemo id placeat non illum explicabo
+                laboriosam, enim delectus quis sunt. Dicta qui tempore voluptas quod ad quidem voluptates omnis
+                reprehenderit tenetur eveniet ipsam nesciunt sit magnam odio quas similique at laudantium quibusdam,
+                quis consequuntur adipisci rerum. Exercitationem, dolores fugiat, vel sapiente atque dicta repellendus
+                sed in quam itaque modi reiciendis illum? Temporibus sit at distinctio dolore perferendis mollitia
+                asperiores qui voluptas repudiandae molestiae quo, nisi ipsa. Nisi error perspiciatis velit magnam ipsum
+                ea eligendi at, sapiente quo dolorum doloribus, voluptas ducimus similique maxime soluta obcaecati
+                tenetur amet magni ex natus fugiat. Ad tenetur ducimus veniam facilis vel. Excepturi, officiis
+                voluptatem unde, error quo aperiam similique minima porro ea facere pariatur, cupiditate omnis totam
+                dolorem harum natus in! Numquam impedit laborum repudiandae nisi, dicta illo magnam possimus adipisci,
+                libero placeat ducimus omnis consequuntur? Corrupti quibusdam debitis unde natus magni tempora. Deleniti
+                vitae at quia, facilis fugiat atque dolorem beatae sequi praesentium modi voluptatum repellendus et
+                ipsum doloribus nihil quo, totam, ad nam tenetur distinctio debitis! Possimus quibusdam itaque incidunt
+                dolore vitae ut minima. Dicta, recusandae quae enim accusantium iste eaque hic facere minus nesciunt,
+                aliquid praesentium fuga. Eveniet perferendis id harum! Architecto, facere minus inventore ratione
+                facilis expedita labore enim vel? Repellendus, excepturi aliquam. Facere animi, at, dolorum itaque, enim
+                voluptates suscipit quas sit velit in eligendi rerum. Quo distinctio mollitia accusantium cum dolor
+                magnam, iure ut modi quam? Ut nisi nostrum commodi molestiae earum! Facere aliquid sit vero enim
+                voluptatem modi eos quasi nisi earum corrupti. Adipisci eos laudantium iste harum id molestiae, facere
+                inventore tempore possimus animi, eligendi ducimus cupiditate sint tenetur minima deserunt expedita sed.
+                Assumenda saepe odit sunt molestias magnam, nemo iure! Laudantium nemo necessitatibus quia iusto,
+                corrupti laboriosam doloremque magnam dolor, inventore adipisci totam dignissimos quaerat sed quisquam
+                excepturi rerum autem fugit, repellat temporibus explicabo quod ab? Magnam dolores deleniti, asperiores
+                officia expedita corporis esse, nemo deserunt assumenda voluptates iste magni exercitationem! Provident,
+                cumque. </p>
+                <img src="../../images/16.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
